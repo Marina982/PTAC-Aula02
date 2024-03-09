@@ -1,7 +1,7 @@
 export default function Footer(){
     return(
-        <Footer>
-            <h2>Desenvolvido</h2>
-        </Footer>
+        <footer>
+            <p>Desenvolvido por: Marina R.O.M Goes</p>
+        </footer>
     )
 }
