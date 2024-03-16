@@ -2,7 +2,7 @@ export default function Header(){
 
     return(
         <header>
-<p>Cabeçalho</p>
+<p>Lista Telefonica</p>
         </header>
     );
 }
