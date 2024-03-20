@@ -9,7 +9,10 @@ export default function Main(){
   
 <form>
 <label For="nome">Nome:</label>
-   <input type="text" name="" id="" onChange={
+   <input type="text" name="contato" id="nome" 
+   value={nome}
+   
+   onChange={
     (event)=> setNome(event.target.value)}/>
     {nome}
 
@@ -17,7 +20,11 @@ export default function Main(){
 
 <form>
 <label For="telefone">Telefone:</label>
-<input type="tel" name="" id="" onChange={
+<input type="tel" name="numero-telefone" id="telefone" 
+value={telefone}
+
+
+onChange={
   (event)=> setTelefone(event.target.value)}/>
 {telefone}
 
