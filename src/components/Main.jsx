@@ -4,6 +4,7 @@ export default function Main(){
 
     const [nome, setNome] = useState("")
     const [telefone, setTelefone] = useState("")
+    const [CPF, setResgistrogeral] = useState("")
     const [listaContatos, setListaContatos] = useState( [ ] ) // constante para uma lista 
 
     const registrar = (event) => {
@@ -12,7 +13,9 @@ export default function Main(){
 
        setListaContatos([...listaContatos, {
         nomelista: nome,
-        Telefonelista: telefone
+        Telefonelista: telefone,
+        cofSalvo: CPF
+
        }])
     }
     console.table(listaContatos);
@@ -21,7 +24,7 @@ export default function Main(){
     return(<main>
   
 <form onSubmit={registrar}>
-<label For="nome">Nome:</label>
+<label htmlFor="nome">Nome:</label>
    <input type="text" name="contato" id="nome" 
    value={nome}
    
@@ -38,7 +41,19 @@ value={telefone}
   (event)=> setTelefone(event.target.value)}/>
 {telefone}
 
+
+<label htmlFor="CPF">CPF:</label>
+<input type="cp" name="numero-CPF" id="Cpf" 
+value={CPF}
+
+   onChange={
+  (event)=> setResgistrogeral(event.target.value)}/>
+{CPF}
+
 <button type="submit">Enviar</button>
+
+
+
 
 </form>
 
