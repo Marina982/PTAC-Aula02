@@ -14,8 +14,7 @@ export default function Main(){
        setListaContatos([...listaContatos, {
         nomelista: nome,
         Telefonelista: telefone,
-        cofSalvo: CPF
-
+        CpfSalvo: CPF
        }])
     }
     console.table(listaContatos);
