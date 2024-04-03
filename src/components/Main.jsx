@@ -57,7 +57,12 @@ value={CPF}
 </form>
 
 
-
+{listaContatos.map((contato, index)=> 
+<div key={index}>
+<p>{contato.nomelista}</p>
+<p>{contato.Telefonelista}</p>
+<p>{contato.CpfSalvo}</p>
+</div>)}
 
     </main>);
 
