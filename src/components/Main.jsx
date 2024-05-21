@@ -18,6 +18,20 @@ export default function Main(){
        }])
     }
     console.table(listaContatos);
+
+    const remover = (id) => {
+      const novaLista = listaContatos.filter(
+        (contato,index)=>{
+          if(index !== id){
+            return contato
+          }else{
+            return null
+          }
+        }
+      );
+      setListaContatos(novaLista)
+      alert(id);
+    }
    
 
     return(<main>
@@ -62,6 +76,7 @@ value={CPF}
 <p>{contato.nomelista}</p>
 <p>{contato.Telefonelista}</p>
 <p>{contato.CpfSalvo}</p>
+<button onClick={ ()=> remover(index)  }>x</button>
 </div>)}
 
     </main>);

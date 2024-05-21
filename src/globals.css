@@ -1,18 +1,16 @@
 header{
     height: 60px;
     color:white;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(0, 0, 0);
     font-size: 20px;
     display: flex;
     justify-content: center;
-    border-style: solid;
-    border-color: rgb(88, 88, 88);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 footer{
     height: 60px;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(0, 0, 0);
     color: white;
     font-size: 15px;
     bottom: 0%;
@@ -21,12 +19,13 @@ footer{
     display: flex;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-color: rgb(88, 88, 88);
-    border-style: solid;
-   
 }
 
 html, body {
     margin: 0;
     padding: 0;
+  }
+
+main{
+    display: grid;
   }
