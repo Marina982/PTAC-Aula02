@@ -30,7 +30,7 @@ export default function Main(){
         }
       );
       setListaContatos(novaLista)
-      alert(id);
+      alert(id)
     }
    
 
